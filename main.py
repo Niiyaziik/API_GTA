@@ -3,7 +3,8 @@ from typing import List, Optional
 
 app = FastAPI()
 
-sedans = [
+data = {
+    "sedans":[
   { 
       "id": "1",
       "images": {
@@ -673,7 +674,8 @@ sedans = [
       "braking": 31.67,
       "handling": 65.45
     }
-]
+    ]
+}
 
 @app.get("/auto/")
 async def get_characters(
@@ -682,8 +684,8 @@ async def get_characters(
     size: int = Query(10, ge=1, description="Размер страницы")
 ) -> List[dict]:
     filtered_data = (
-        [item for item in sedans if text.lower() in item["fullName"].lower()]
-        if text else sedans
+        [item for item in data if text.lower() in item["text"].lower()]
+        if text else data
     )
 
     start_index = (page-1) * size
