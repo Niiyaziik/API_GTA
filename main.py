@@ -4,7 +4,6 @@ from typing import List, Optional
 app = FastAPI()
 
 data = {
-    "sedans":[
   { 
       "id": "1",
       "images": {
@@ -674,7 +673,6 @@ data = {
       "braking": 31.67,
       "handling": 65.45
     }
-    ]
 }
 
 @app.get("/auto/")
