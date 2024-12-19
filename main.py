@@ -682,7 +682,7 @@ async def get_characters(
     size: int = Query(10, ge=1, description="Размер страницы")
 ) -> List[dict]:
     filtered_data = (
-        [item for item in sedans if text.lower() in item["text"].lower()]
+        [item for item in sedans if text.lower() in item["model"].lower()]
         if text else sedans
     )
 
