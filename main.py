@@ -4,7 +4,8 @@ from typing import List, Optional
 app = FastAPI()
 
 sedans = [
-  { 
+  "sedans": [
+    { 
       "id": "1",
       "images": {
         "frontQuarter": "https://vignette.wikia.nocookie.net/gtawiki/images/c/c6/Asea2-GTAV-FrontQuarter.png/revision/latest/scale-to-width-down/210",
@@ -673,6 +674,7 @@ sedans = [
       "braking": 31.67,
       "handling": 65.45
     }
+  ]
 ]
 
 @app.get("/auto/")
