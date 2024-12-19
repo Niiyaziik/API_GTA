@@ -4,7 +4,6 @@ from typing import List, Optional
 app = FastAPI()
 
 sedans = [
-  "sedans": [
     { 
       "id": "1",
       "images": {
@@ -675,7 +674,6 @@ sedans = [
       "handling": 65.45
     }
   ]
-]
 
 @app.get("/auto/")
 async def get_characters(
