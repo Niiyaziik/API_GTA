@@ -14,7 +14,7 @@ data = [
       "side": "https://vignette.wikia.nocookie.net/gtawiki/images/c/ca/Asea2-GTAV-Side.png/revision/latest/scale-to-width-down/210"
     },
     "manufacturer": "declasse",
-    "model": "asea2"
+    "model": "asea2",
     "seats": 4,
     "price": 12000,
     "topSpeed": {
