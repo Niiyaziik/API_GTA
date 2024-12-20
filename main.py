@@ -675,7 +675,7 @@ data = [
   }
 ]
 
-@app.get("/characters/")
+@app.get("/auto/")
 async def get_characters(
     model: Optional[str] = Query(None, description="Поиск по имени"),
     page: int = Query(1, ge=1, description="Номер страницы"),
