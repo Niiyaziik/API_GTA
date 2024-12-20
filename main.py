@@ -15,6 +15,16 @@ data = [
     },
     "manufacturer": "declasse",
     "model": "asea2"
+    "seats": 4,
+    "price": 12000,
+    "topSpeed": {
+      "mph": 104,
+      "kmh": 167
+    },
+    "speed": 77.8,
+    "acceleration": 50,
+    "braking": 13.33,
+    "handling": 62.12
   },
   {
     "id": "2",
@@ -159,6 +169,7 @@ data = [
     },
     "manufacturer": "albany",
     "model": "emperor2",
+    "price": 254000,
     "seats": 4,
     "topSpeed": {
       "mph": 90,
@@ -180,6 +191,7 @@ data = [
     },
     "manufacturer": "albany",
     "model": "emperor3",
+    "price": 254000,
     "seats": 4,
     "topSpeed": {
       "mph": 90,
@@ -201,6 +213,7 @@ data = [
     },
     "manufacturer": "albany",
     "model": "emperor",
+    "price": 254000,
     "seats": 4,
     "topSpeed": {
       "mph": 90,
